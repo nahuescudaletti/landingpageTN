@@ -11,11 +11,17 @@ body, html {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
 }
+.bordertop{
+  border-top: 2px solid #ffffff; /* Puedes ajustar el grosor y el color según tus preferencias */
+}
 main{
   margin-top: 10%;
 }
 section {
     scroll-margin-top: 100px; /* Ajusta según la altura de tu navbar */
+}
+footer{
+  background-color: #130826;
 }
 
 /* Sobrescribe la propiedad --bs-navbar-padding-y en tu propia clase personalizada */
@@ -290,7 +296,7 @@ filter: opacity(0.8);
 /* speed beneficios  */
 
 .beneficiosspeed{
-  background-color: black;
+  background-color: #130826;
 }
 
 .beneficiosspeed .count-box i {
@@ -341,23 +347,16 @@ filter: opacity(0.8);
 }
 .dondeelestilo1{
   font-family: "Raleway", sans-serif;
-    font-size: 18px;
+    font-size: 10px;
     color: white;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 .img-bigger {
-  width: 8vh; /* Ajusta el ancho deseado de la imagen */
+  width: 4vh; /* Ajusta el ancho deseado de la imagen */
   height: auto; /* Mantenemos la proporción original de la imagen */
 }
 
-.manoderecha {
-  position: absolute;
-  top: 0;
-  left: 170px; 
-  height: 100%;
-  z-index: 1; 
-}
 
 /* Resto de estilos... */
 
@@ -392,7 +391,7 @@ filter: opacity(0.8);
 
 .dondeelestilo1{
   font-family: "Raleway", sans-serif;
-    font-size: 25px;
+    font-size: 14px;
     color: white;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -935,6 +934,82 @@ filter: opacity(0.8);
   top: 60px;
   animation: twinkling 2s infinite;
 }
+.foot {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px; /* Ajusta el espacio entre el título y los pseudo-elementos */
+}
+
+.foot::before,
+.foot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 2.5px;
+  background-color: #1FE8B8;
+}
+
+.foot::before {
+  left: -40px;
+}
+
+.foot::after {
+  right: -40px;
+}
+.coin {
+  font-size: 200px;
+  width: 0.1em;
+  height: 1em;
+  background: linear-gradient(#ffd700, #141001);
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: rotate_4001510 7s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.coin .side, .coin:before, .coin:after {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  border-radius: 50%;
+  right: -0.4em;
+  text-align: center;
+  line-height: 1;
+  transform: rotateY(-90deg);
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.coin .tails, .coin:after {
+  left: -0.4em;
+  transform: rotateY(90deg);
+}
+
+.coin:before, .coin:after {
+  background: linear-gradient(#ffd700, #141001);
+  backface-visibility: hidden;
+  transform: rotateY(90deg);
+}
+
+.coin:after {
+  transform: rotateY(-90deg);
+}
+
+@keyframes rotate_4001510 {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
 
 
 
@@ -1193,57 +1268,4 @@ filter: opacity(0.8);
         background-color: rgba(144, 72, 237, 1);
     }
 }
-
-.coin {
-  font-size: 200px;
-  width: 0.1em;
-  height: 1em;
-  background: linear-gradient(#ffd700, #141001);
-  margin: auto;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  animation: rotate_4001510 7s infinite linear;
-  transform-style: preserve-3d;
-}
-
-.coin .side, .coin:before, .coin:after {
-  content: "";
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  overflow: hidden;
-  border-radius: 50%;
-  right: -0.4em;
-  text-align: center;
-  line-height: 1;
-  transform: rotateY(-90deg);
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.coin .tails, .coin:after {
-  left: -0.4em;
-  transform: rotateY(90deg);
-}
-
-.coin:before, .coin:after {
-  background: linear-gradient(#ffd700, #141001);
-  backface-visibility: hidden;
-  transform: rotateY(90deg);
-}
-
-.coin:after {
-  transform: rotateY(-90deg);
-}
-
-@keyframes rotate_4001510 {
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-
 
