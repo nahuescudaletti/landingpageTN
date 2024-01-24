@@ -11,6 +11,11 @@ body, html {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
 }
+/* Sobrescribe la propiedad --bs-navbar-padding-y en tu propia clase personalizada */
+.eliminar-padding-navbar {
+    --bs-navbar-padding-y: 0 !important;
+}
+
 
 .gradient-border {
   position: relative;
@@ -690,7 +695,7 @@ filter: opacity(0.8);
     position: absolute;
 } */
 
-.espiral {
+.background-world-tn {
   height: 100%;
   width: 100%;
   display: flex;
