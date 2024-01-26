@@ -10,6 +10,8 @@ body, html {
   font-weight: 400;
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
+  overflow-y: scroll;
+
 }
 .bordertop{
   border-top: 2px solid #ffffff; /* Puedes ajustar el grosor y el color según tus preferencias */
@@ -23,6 +25,7 @@ section {
 }
 footer{
   background-color: #130826;
+  height: auto;
 }
 
 /* Sobrescribe la propiedad --bs-navbar-padding-y en tu propia clase personalizada */
@@ -790,12 +793,12 @@ filter: opacity(0.8);
   width: 250px;
   position: relative;
   transition: left 0.3s linear;
-  background: url("../img/back12311.jpg");
+  background: url("../img/h.jpg");
   background-size: cover;
   background-position: left;
   bottom: 0px;
   border-radius: 50%;
-  animation: earthRotate 10s linear 0s infinite;
+  animation: earthRotate 20s linear infinite; /* Ajusta la duración según tus necesidades */
   box-shadow: 0px 0 20px rgba(255, 255, 255, 0.1), 
               -5px 0px 8px #c3f4ff inset,
               15px 2px 25px #000 inset,
@@ -803,33 +806,15 @@ filter: opacity(0.8);
               250px 0px 20px #00000066 inset,
               150px 0px 20px #000000aa inset; 
 }
-.section-banner1 {
-  height: 250px;
-  width: 250px;
-  position: relative;
-  transition: left 0.3s linear;
-  background: url("../img/cardvip.jpeg");
-  background-size: cover;
-  background-position: left;
-  bottom: 0px;
-  border-radius: 50%;
-  animation: earthRotate 10s linear 0s infinite;
-  box-shadow: 0px 0 20px rgba(255, 255, 255, 0.1), 
-              -5px 0px 8px #c3f4ff inset,
-              15px 2px 25px #000 inset,
-              -24px -2px 34px #c3f4ff99 inset,
-              250px 0px 20px #00000066 inset,
-              150px 0px 20px #000000aa inset; 
-}
-
 @keyframes earthRotate {
   0% {
     background-position: 0 0;
   }
   100% {
-    background-position: 400px 0;
+    background-position: 1000px 0;
   }
 }
+
 
 .curved-corner-star {
   display: flex;
@@ -1218,13 +1203,13 @@ filter: opacity(0.8);
 }
 @media (max-width: 490px){
   .character{
-    font-size: 2.2rem
+    font-size: 2rem
   }
    .somosthisnight {
     font-family: 'Asap', sans-serif;
     color: rgb(255, 255, 255);
     font-weight: lighter;
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-transform: uppercase;
     position: relative;
     z-index: 2; /* Ajustado el z-index a un valor más alto */
