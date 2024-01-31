@@ -1103,7 +1103,7 @@ margin-bottom: 10%;
   background: #51afdb;
 }
 .Btn:hover .BG {
-  transform: scale(1.5);
+  transform: scale(1.2);
   /* transform-origin: bottom; */
   font-size: 20px;
   color: white;
@@ -1331,7 +1331,6 @@ margin-bottom: 10%;
         font-size: 3rem;
         color: white;
         font-weight: bold;
-        font-family: 'Tusker Grotesk3', sans-serif;
         text-align: center;
         margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
     }
