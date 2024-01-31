@@ -1241,6 +1241,13 @@ margin-bottom: 10%;
     }
 }
 @media (max-width: 490px){
+  .titulosModulos {
+    font-family: "asap", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px; /* Add margin if needed */
+}
   .character{
     font-size: 2rem
   }
