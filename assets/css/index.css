@@ -29,7 +29,7 @@ footer{
 /* Sobrescribe la propiedad --bs-navbar-padding-y en tu propia clase personalizada */
 .eliminar-padding-navbar {
     --bs-navbar-padding-y: 0 !important;
-    z-index: 70 !important;
+    z-index: 99 !important;
 }
 
 
