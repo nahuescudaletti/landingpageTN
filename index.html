@@ -36,7 +36,7 @@
 </head>
 
 <body>
-    <div id="preloader">
+    <div class="preloader">
         <img src="./assets/img/tarjeta.gif" alt="Preloader">
     </div>
     <header>
@@ -730,18 +730,24 @@
 </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Espera un tiempo adicional después de que todo el contenido se ha cargado
-            setTimeout(function() {
-                // Oculta el preloader
-                document.getElementById('preloader').style.opacity = '0';
+    // Espera un tiempo adicional después de que todo el contenido se ha cargado
+    setTimeout(function() {
+        // Obtén todos los elementos con la clase 'preloader'
+        var preloaders = document.querySelectorAll('.preloader');
 
-                // Después de la transición, elimina el preloader y permite el desplazamiento
-                setTimeout(function() {
-                    document.getElementById('preloader').style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }, 500); // Ajusta el tiempo de la transición
-            }, 2000); // Ajusta el tiempo de espera adicional
+        // Itera sobre los elementos y oculta cada preloader
+        preloaders.forEach(function(preloader) {
+            preloader.style.opacity = '0';
+
+            // Después de la transición, elimina el preloader y permite el desplazamiento
+            setTimeout(function() {
+                preloader.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 500); // Ajusta el tiempo de la transición
         });
+    }, 2000); // Ajusta el tiempo de espera adicional
+});
+
     </script>
 </body>
 </html>
