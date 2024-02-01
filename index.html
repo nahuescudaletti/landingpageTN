@@ -30,12 +30,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href="./assets/css/preloader.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
     <title>This Night x Speed</title>
 </head>
 
 <body>
+    <div id="preloader"></div>
     <header>
         <div class="ware"></div>
         <nav class="navbar fixed-top navbar-expand-lg eliminar-padding-navbar">
@@ -725,26 +725,11 @@
 });
 
 </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    // Espera un tiempo adicional después de que todo el contenido se ha cargado
-    setTimeout(function() {
-        // Obtén todos los elementos con la clase 'preloader'
-        var preloaders = document.querySelectorAll('.preloader');
-
-        // Itera sobre los elementos y oculta cada preloader
-        preloaders.forEach(function(preloader) {
-            preloader.style.opacity = '0';
-
-            // Después de la transición, elimina el preloader y permite el desplazamiento
-            setTimeout(function() {
-                preloader.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }, 500); // Ajusta el tiempo de la transición
-        });
-    }, 2000); // Ajusta el tiempo de espera adicional
-});
-
-    </script>
+<script>
+    let loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
+</script>
 </body>
 </html>
