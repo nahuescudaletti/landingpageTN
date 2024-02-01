@@ -726,10 +726,26 @@
 
 </script>
 <script>
-    let loader = document.getElementById("preloader");
-    window.addEventListener("load", function(){
-        loader.style.display = "none";
-    })
+    document.addEventListener('DOMContentLoaded', function() {
+    // Guarda la referencia al preloader
+    var loader = document.getElementById("preloader");
+
+    // Muestra el preloader
+    loader.style.opacity = '1';
+
+    // Espera al menos 2 segundos antes de ocultar el preloader
+    setTimeout(function() {
+        // Oculta el preloader
+        loader.style.opacity = '0';
+
+        // Después de la transición, elimina el preloader y permite el desplazamiento
+        setTimeout(function() {
+            loader.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 500); // Ajusta el tiempo de la transición
+    }, 2500); // Mínimo de 2 segundos antes de ocultar el preloader
+});
+
 </script>
 </body>
 </html>
