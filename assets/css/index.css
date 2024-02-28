@@ -16,7 +16,7 @@ body{
 }
 
 main{
-  margin-top: 100px;
+  margin-top: 80px;
 }
 section {
   scroll-margin-top: 100px; /* Ajusta según la altura de tu navbar */
