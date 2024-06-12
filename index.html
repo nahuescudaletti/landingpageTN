@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestiona y organiza tus eventos en boliches de manera eficiente con This Night.">
+    <meta name="keywords" content="gestión de boliches, organización de eventos, tickets, comanderas, tarjetas personalizadas This Night">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.tudominio.com/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="This Night - Gestión de discotecas, boliches y eventos">
+    <meta property="og:description" content="Gestiona y organiza tus eventos de manera eficiente con This Night.">
+    <meta property="og:image" content="https://www.tudominio.com/assets/img/thisnightportada.png">
+    <meta property="og:url" content="https://www.thisnight.com.ar/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="This Night - Gestión de Boliches">
+    <meta name="twitter:description" content="Gestiona y organiza tus eventos en boliches de manera eficiente con This Night.">
+    <meta name="twitter:image" content="https://www.tudominio.com/assets/img/thisnightportada.png">
+
+    <!-- CSS Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -13,25 +32,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tusker+Grotesk:wght@900&display=swap">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
-    <title>This Night x Speed</title>
+
+    <title>This Night - Gestión de Boliches</title>
 </head>
 
 <body>
@@ -41,7 +51,7 @@
         <nav class="navbar fixed-top navbar-expand-lg eliminar-padding-navbar">
             <div class="container-fluid m-0 p-0">
                 <a class="navbar-brand" href="#header" style="padding: 10px; margin-right:10%;">
-                    <img src="./assets/img/logothisnight.png" alt="" class="img-fluid navicons" style="width: 65px; height: auto;">
+                    <img src="./assets/img/logothisnight.png" alt="Logo de This Night" class="img-fluid navicons" style="width: 65px; height: auto;">
                 </a>
                 <button id="toggleButton" class="bg-transparent border-0 me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <img class="navicons" id="menu-icon" src="./assets/img/tarjetazoom.gif" style="width:60px;height:60px">
@@ -101,56 +111,57 @@
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="section pb-0 gradient-border my-3 my-md-5" id='home'>
-            <div class="container-fluid">
-                <div class="row d-flex flex-wrap justify-content-center align-items-center">
-                    <div class="col-lg-4 col-md-12 col-sm-8 col-12 cardthisnight" data-aos="fade-left" data-aos-duration="500">
-                        <p class="mensaje-personalizado text-center">DISEÑA TU PROPIA TARJETA</p>
-                        <p class="mensaje-personalizado text-center">CON <span class="thisnightaaa">THIS NIGHT</span></p>
-                    </div>
-                    <div class="col-lg-1 flecha-container d-none d-lg-block">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <i class="fa-solid fa-angles-right"></i>
-                    </div>
-                    <div class="col-lg-5 col-md-12 col-sm-8 col-12 " data-aos="fade-up" data-aos-duration="500">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 cardtn">
-                                    <div class="TarjetaPersonalizada card-itemtn" style="background-image: url('./assets/img/cardthisnight.png');">
-                                        <div class="superposicion">
-                                            <div>
-                                                <img id="logo" src="./assets/img/pnto.png" alt="Logo">
-                                                <img class="watermark1" src="./assets/img/TEXTTHIS.png" alt="Watermark1">
-                                                <img class="watermark2" src="./assets/img/luna_money.svg" alt="Watermark2">
-                                            </div>
+    <section class="section pb-0 gradient-border my-3 my-md-5" id='home'>
+        <div class="container-fluid">
+            <div class="row d-flex flex-wrap justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-12 col-sm-8 col-12 cardthisnight" data-aos="fade-left" data-aos-duration="500">
+                    <p class="mensaje-personalizado text-center">DISEÑA TU PROPIA TARJETA</p>
+                    <p class="mensaje-personalizado text-center">CON <span class="thisnightaaa">THIS NIGHT</span></p>
+                </div>
+                <div class="col-lg-1 flecha-container d-none d-lg-block">
+                    <i class="fa-solid fa-angles-right"></i>
+                    <i class="fa-solid fa-angles-right"></i>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-8 col-12 " data-aos="fade-up" data-aos-duration="500">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 cardtn">
+                                <div class="TarjetaPersonalizada card-itemtn" style="background-image: url('./assets/img/cardthisnight.png');">
+                                    <div class="superposicion">
+                                        <div>
+                                            <img id="logo" src="./assets/img/pnto.png" alt="Logo de This Night">
+                                            <img class="watermark1" src="./assets/img/TEXTTHIS.png" alt="Marca de agua 1">
+                                            <img class="watermark2" src="./assets/img/luna_money.svg" alt="Marca de agua 2">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 mt-3 text-center">
-                                    <div class="contenedorBotones">
-                                        <input type="file" id="inputLogo" accept="image/*" style="display: none;" onchange="cargarLogo(event)">
-                                        <input type="file" id="inputFondo" accept="image/*" style="display: none;" onchange="cargarFondo(event)">
-                                        <button class="btn btn-primary d-flex align-items-center css-button-sliding-to-top--rose" onclick="document.getElementById('inputFondo').click()">Subi tu Fondo</button>
-                                        <button class=" btn btn-primary d-flex align-items-center css-button-sliding-to-top--rose" onclick="document.getElementById('inputLogo').click()">Cargar tu Logo</button>
-                                    </div>
+                            </div>
+                            <div class="col-lg-12 mt-3 text-center">
+                                <div class="contenedorBotones">
+                                    <input type="file" id="inputLogo" accept="image/*" style="display: none;" onchange="cargarLogo(event)">
+                                    <input type="file" id="inputFondo" accept="image/*" style="display: none;" onchange="cargarFondo(event)">
+                                    <button class="btn btn-primary d-flex align-items-center css-button-sliding-to-top--rose" onclick="document.getElementById('inputFondo').click()" aria-label="Subir fondo de la tarjeta">Subi tu Fondo</button>
+                                    <button class="btn btn-primary d-flex align-items-center css-button-sliding-to-top--rose" onclick="document.getElementById('inputLogo').click()" aria-label="Cargar tu logo">Cargar tu Logo</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="quees" class=" container-fluid background-world-tn h-100 py-3 py-md-5">
+        </div>
+    </section>
+        <section id="quees" class="container-fluid background-world-tn h-100 py-3 py-md-5">
             <div class="container-fluid containerquees flash">
                 <div class="container position-relative quees mb-3 planet-container" data-aos="fade-up" data-aos-duration="500">
                     <div class="world">
-                        <h2 class="somosthisnight">This Night</h2>
+                        <h2 class="somosthisnight">This Night - Gestión de Boliches</h2>
                     </div>
                 </div>
                 <div class="row content" data-aos="fade-up" data-aos-duration="500">
                     <div class="col-lg-6 col-md-12 px-md-4">
-                        <p class="custom-text">Con <b>This Night</b>, emopeza tu 2024 con la ultima tecnologia, lleva tu evento a otro nivel.</p>
+                        <p class="custom-text">Con <b>This Night</b>, comienza tu 2024 con la última tecnología y lleva tu evento a otro nivel.</p>
                     </div>
                     <div class="col-lg-6 col-md-12 px-md-4">
                         <ul class="list-unstyled custom-list">
@@ -164,15 +175,16 @@
                 </div>
             </div>
         </section>
+
         <section class="my-3 my-md-5">
             <div class="container-fluid containerquees">
                 <div class="container-custom position-relative quees aos-init aos-animate mb-3"  data-aos="fade-up" data-aos-duration="500">
-                    <h2 class="title-custom titlequees h2-main">MÓDULOS DISPONIBLES</h2>
+                    <h2 class="title-custom titlequees h2-main">MÓDULOS DISPONIBLES - Gestión de Boliches</h2>
                     <p>Adaptable a todo tipo de evento</p>
                 </div>
                 <div class="row content">
                     <div class="col-xl-3 col-lg-6 col-md-6 px-4 my-3 lineaM">
-                        <a href="#ncard" class="text-decoration-none">
+                        <a href="#ncard" class="text-decoration-none" aria-label="Ver detalles de N-Card">
                             <div class="card-custom h-100 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
                                 <div class="card-custom-body flex-fill d-flex flex-column">
                                     <div class="icon-custom">
@@ -185,7 +197,7 @@
                         </a>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6 px-4 my-3 lineaM">
-                        <a href="#nmember" class="text-decoration-none">
+                        <a href="#nmember" class="text-decoration-none" aria-label="Ver detalles de N-Membership">
                             <div class="card-custom h-100 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
                                 <div class="card-custom-body flex-fill d-flex flex-column">
                                     <div class="icon-custom">
@@ -198,7 +210,7 @@
                         </a>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6 px-4 my-3 lineaM">
-                        <a href="#nid" class="text-decoration-none">
+                        <a href="#nid" class="text-decoration-none" aria-label="Ver detalles de N-ID">
                             <div class="card-custom h-100 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
                                 <div class="card-custom-body flex-fill d-flex flex-column">
                                     <div class="icon-custom">
@@ -211,7 +223,7 @@
                         </a>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6 px-4 my-3 lineaM">
-                        <a href="#verificacion" class="text-decoration-none">
+                        <a href="#verificacion" class="text-decoration-none" aria-label="Ver detalles de Verificación">
                             <div class="card-custom h-100 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
                                 <div class="card-custom-body flex-fill d-flex flex-column">
                                     <div class="icon-custom">
@@ -235,11 +247,12 @@
                 </div>
             </div>
         </section>
+
         <section id="ncard" class="py-3 py-md-5">
             <div class="container-fluid containerquees">
                 <div class="container-fluid position-relative quees moudl" data-aos="fade-up" data-aos-duration="500">
                     <div class="moduleCard">
-                        <h2 class="titulosModulos">N-CARD</h2>
+                        <h2 class="titulosModulos">N-CARD - Gestión de Boliches</h2>
                         <img class="img-fluid w-75" src="./assets/img/tarjetazoom.gif" alt="">
                     </div>
                 </div>
@@ -300,12 +313,11 @@
                                                 <i class="fa-solid fa-arrow-trend-up mb-2"></i>
                                                 <p class="purecounter text-start">AUMENTO DEL CONSUMO</p>
                                             </div>
-                                            <p class="col-12 text-start">Implementar el modulo N-CARD puede aumentar hasta un 20% el consumo respecto a los métodos de pagos convencionales en eventos gracias a la facilidad y comodidad de compra.</p>
+                                            <p class="col-12 text-start">Implementar el módulo N-CARD puede aumentar hasta un 20% el consumo respecto a los métodos de pagos convencionales en eventos gracias a la facilidad y comodidad de compra.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-12" id="animation-container-1">
                                 <div class="row d-flex justify-content-center">
                                     <div class="col-xl-4 col-lg-5 col-md-10 col-11 d-md-flex align-items-md-stretch p-0 m-2 beneficioscards text-center">
@@ -328,7 +340,7 @@
             <div class="container-fluid containerquees">
                 <div class="container-fluid position-relative quees moudl m-0" data-aos="fade-up" data-aos-duration="500">
                     <div class="moduleCard">
-                        <h2 class="titulosModulos">N-ID</h2>
+                        <h2 class="titulosModulos">N-ID - Gestión de Boliches</h2>
                         <div class="section-banner">
                             <div id="star-1">
                                 <div class="curved-corner-star">
@@ -410,69 +422,70 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 container-custom position-relative quees my-3 my-md-5" data-aos="fade-up" data-aos-duration="200">
-                        <h2 class="title-custom titlequees h2-main text-center">BENEFICIOS</h2>
-                    </div>
-                    <div class="col-12" data-aos="fade-up" data-aos-duration="500">
-                        <div class="row justify-content-center w-100">
-                            <div class="col-12" id="animation-container-3">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-xl-4 col-lg-5 col-md-10 col-11 p-0 m-2 beneficioscards d-flex flex-column align-items-center">
-                                        <div class="row count-box p-3 m-1 h-100 d-flex flex-column text-center">
-                                            <div class="col-12 d-flex align-items-center justify-content-center mb-2">
-                                                <i class='bx bx-list-ul mb-2' ></i>
-                                                <p class="purecounter">LISTAS</p>
+                        <div class="col-12 container-custom position-relative quees my-3 my-md-5" data-aos="fade-up" data-aos-duration="200">
+                            <h2 class="title-custom titlequees h2-main text-center">BENEFICIOS</h2>
+                        </div>
+                        <div class="col-12" data-aos="fade-up" data-aos-duration="500">
+                            <div class="row justify-content-center w-100">
+                                <div class="col-12" id="animation-container-3">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-xl-4 col-lg-5 col-md-10 col-11 p-0 m-2 beneficioscards d-flex flex-column align-items-center">
+                                            <div class="row count-box p-3 m-1 h-100 d-flex flex-column text-center">
+                                                <div class="col-12 d-flex align-items-center justify-content-center mb-2">
+                                                    <i class='bx bx-list-ul mb-2' ></i>
+                                                    <p class="purecounter">LISTAS</p>
+                                                </div>
+                                                <p class="col-12 text-start"> Desarrollo de listas estáticas y
+                                                    dinámicas según las necesidades
+                                                    del evento. <br> Seguimiento del ingreso de asistentes
+                                                    por listas específicas. Registro
+                                                    detallado de la recaudación
+                                                    monetaria asociada a cada lista.
+                                                </p>
                                             </div>
-                                            <p class="col-12 text-start"> Desarrollo de listas estáticas y
-                                                dinámicas según las necesidades
-                                                del evento. <br> Seguimiento del ingreso de asistentes
-                                                por listas específicas. Registro
-                                                detallado de la recaudación
-                                                monetaria asociada a cada lista.
-                                            </p>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-5 col-md-10 col-11 d-md-flex align-items-md-stretch p-0 m-2 beneficioscards text-center">
-                                        <div class="row count-box p-3 m-1 h-100 d-flex flex-column text-center">
-                                            <div class="col-12 d-flex align-items-center justify-content-center mb-2">
-                                                <i class='bx bx-id-card mb-2'></i>
-                                                <p class="purecounter text-start">IDENTIFICACIÓN</p>
+                                        <div class="col-xl-4 col-lg-5 col-md-10 col-11 d-md-flex align-items-md-stretch p-0 m-2 beneficioscards text-center">
+                                            <div class="row count-box p-3 m-1 h-100 d-flex flex-column text-center">
+                                                <div class="col-12 d-flex align-items-center justify-content-center mb-2">
+                                                    <i class='bx bx-id-card mb-2'></i>
+                                                    <p class="purecounter text-start">IDENTIFICACIÓN</p>
+                                                </div>
+                                                <p class="col-12 text-start">Herramienta de búsqueda rápida y
+                                                    detallada para encontrar
+                                                    información de clientes durante el
+                                                    evento. <br>Monitoreo en tiempo real del número
+                                                    de asistencias dentro del
+                                                    establecimiento.
+                                                </p>
                                             </div>
-                                            <p class="col-12 text-start">Herramienta de búsqueda rápida y
-                                                detallada para encontrar
-                                                información de clientes durante el
-                                                evento. <br>Monitoreo en tiempo real del número
-                                                de asistencias dentro del
-                                                establecimiento.
-                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12" id="animation-container-4">
-                                <div class="row d-flex justify-content-center" >
-                                    <div class="col-xl-4 col-lg-5 col-md-10 col-11 d-md-flex align-items-md-stretch p-0 m-2 beneficioscards text-center justify-content-center">
-                                        <div class="row count-box p-3 m-1 h-100 d-flex flex-column text-center ">
-                                            <div class="col-12 d-flex align-items-center justify-content-center mb-2">
-                                                <i class='bx bx-sitemap mb-2'></i>
-                                                <p class="purecounter text-start">GESTIÓN</p>
+                                <div class="col-12" id="animation-container-4">
+                                    <div class="row d-flex justify-content-center" >
+                                        <div class="col-xl-4 col-lg-5 col-md-10 col-11 d-md-flex align-items-md-stretch p-0 m-2 beneficioscards text-center justify-content-center">
+                                            <div class="row count-box p-3 m-1 h-100 d-flex flex-column text-center ">
+                                                <div class="col-12 d-flex align-items-center justify-content-center mb-2">
+                                                    <i class='bx bx-sitemap mb-2'></i>
+                                                    <p class="purecounter text-start">GESTIÓN</p>
+                                                </div>
+                                                <p class="col-12 text-start">Gestión de costos de ingreso por
+                                                    listas o individuo. <br>
+                                                    Asignación de vouchers y regalos
+                                                    vinculados al DNI del cliente o lista.
                                             </div>
-                                            <p class="col-12 text-start">Gestión de costos de ingreso por
-                                                listas o individuo. <br>
-                                                Asignación de vouchers y regalos
-                                                vinculados al dni del cliente o lista.
                                         </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-5 col-md-10 col-11 d-md-flex align-items-md-stretch p-0 m-2 beneficioscards text-center">
-                                        <div class="row count-box p-3 m-1 h-100 d-flex flex-column text-center">
-                                            <div class="col-12 d-flex align-items-center justify-content-center mb-2">
-                                                <i class='bx bxs-door-open mb-2' ></i>
-                                                <p class="purecounter text-start">ACCESO</p>
+                                        <div class="col-xl-4 col-lg-5 col-md-10 col-11 d-md-flex align-items-md-stretch p-0 m-2 beneficioscards text-center">
+                                            <div class="row count-box p-3 m-1 h-100 d-flex flex-column text-center">
+                                                <div class="col-12 d-flex align-items-center justify-content-center mb-2">
+                                                    <i class='bx bxs-door-open mb-2' ></i>
+                                                    <p class="purecounter text-start">ACCESO</p>
+                                                </div>
+                                                <p class="col-12 text-start">Funcionalidad para prohibir el
+                                                    acceso de personas específicas al
+                                                    evento, por tiempo y alertas
+                                                    detalladas.</p>
                                             </div>
-                                            <p class="col-12 text-start">Funcionalidad para prohibir el
-                                                acceso de personas específicas al
-                                                evento, por tiempo y alertas
-                                                detalladas.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -481,7 +494,7 @@
                     </div>
                 </div>
             </div>
-        </section>  
+        </section>
         <section id="nmember" class="my-3 my-md-5">
             <div class="container-fluid containerquees">
                 <div class="container-fluid position-relative quees moudl m-0" data-aos="fade-up" data-aos-duration="500">
